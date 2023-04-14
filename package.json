@@ -1,0 +1,35 @@
+{
+  "name": "tailwind-scrollbar-utilities",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Tailwind plugin for scrollbar class utilities",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "tailwind-css",
+    "tailwindcss-plugin",
+    "scrollbar",
+    "scrollbar-gutter",
+    "scrollbar-width",
+    "scrollbar-color"
+  ],
+  "repository": "https://github.com/lukewarlow/tailwind-scrollbar-utilities",
+  "author": "Luke Warlow",
+  "license": "MIT",
+  "files": ["dist", "src"],
+  "source": "src/index.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "exports": {
+    ".": {
+      "default": "./dist/index.module.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "microbundle --target node --sourcemap false --format cjs,esm"
+  },
+  "dependencies": {
+    "microbundle": "^0.15.1"
+  }
+}
