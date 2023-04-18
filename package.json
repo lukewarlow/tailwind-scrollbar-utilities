@@ -29,7 +29,7 @@
   "scripts": {
     "build": "microbundle --target node --sourcemap false --format cjs,esm"
   },
-  "dependencies": {
+  "devDependencies": {
     "microbundle": "^0.15.1"
   }
 }
