@@ -22,8 +22,8 @@
   "module": "./dist/index.module.js",
   "exports": {
     ".": {
-      "default": "./dist/index.module.js",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.module.js"
     }
   },
   "scripts": {
