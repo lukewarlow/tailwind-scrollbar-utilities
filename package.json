@@ -1,6 +1,6 @@
 {
   "name": "tailwind-scrollbar-utilities",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "Tailwind plugin for scrollbar class utilities",
   "keywords": [
