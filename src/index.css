@@ -1,0 +1,48 @@
+@theme {
+    --tw-scrollbar-thumb-color: '';
+    --tw-scrollbar-track-color: '';
+    --tw-scrollbar-gutter-modifier: '';
+}
+
+@utility scrollbar-none {
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@utility scrollbar-thin {
+    scrollbar-width: thin;
+}
+
+@utility scrollbar-width-auto {
+    scrollbar-width: auto;
+}
+
+@utility scrollbar-gutter-auto {
+    scrollbar-gutter: auto;
+}
+
+@utility scrollbar-stable {
+    scrollbar-gutter: stable var(--tw-scrollbar-gutter-modifier);
+}
+
+@utility scrollbar-both-edges {
+    --tw-scrollbar-gutter-modifier: both-edges;
+}
+
+@utility scrollbar-color-auto {
+    scrollbar-color: auto;
+}
+
+@utility scrollbar-color {
+    scrollbar-color: var(--tw-scrollbar-thumb-color) var(--tw-scrollbar-track-color);
+}
+
+@utility scrollbar-thumb-* {
+    --tw-scrollbar-thumb-color: --value(--color-*);
+}
+
+@utility scrollbar-track-* {
+    --tw-scrollbar-track-color: --value(--color-*);
+}

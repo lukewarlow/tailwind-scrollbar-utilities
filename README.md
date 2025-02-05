@@ -18,16 +18,12 @@ npm install -D tailwind-scrollbar-utilities
 yarn add -D tailwind-scrollbar-utilities
 ```
 
-Add it to the plugins array of your Tailwind config. Call the functions for the utilities you want to use.
+### When using CSS config
 
-```js
-const { scrollbarGutter, scrollbarWidth, scrollbarColor } = require('tailwind-scrollbar-utilities');
+Add an import for the plugin in your CSS file. You cannot currently import only specific groups of utilities.
 
-plugins: [
-	scrollbarGutter(), // no options to configure
-	scrollbarWidth(), // no options to configure
-	scrollbarColor(), // no options to configure
-]
+```css
+@import "tailwind-scrollbar-utilities";
 ```
 
 ## Usage

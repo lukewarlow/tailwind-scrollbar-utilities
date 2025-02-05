@@ -1,6 +1,6 @@
 {
   "name": "tailwind-scrollbar-utilities",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "Tailwind plugin for scrollbar class utilities",
   "keywords": [
@@ -17,26 +17,16 @@
   "author": "Luke Warlow",
   "license": "MIT",
   "files": ["dist", "src"],
-  "source": "src/index.ts",
-  "module": "./dist/index.module.js",
-  "main": "./dist/index.cjs",
-  "types": "./dist/index.d.ts",
+  "style": "./dist/index.css",
   "exports": {
     ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.module.js"
-      },
-      "require": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.cjs"
-      }
-    }
+      "style": "./dist/index.css"
+    },
+    "./index.css": "./dist/index.css",
+    "./index": "./dist/index.css",
+    "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "microbundle --target node --sourcemap false --format cjs,esm"
-  },
-  "devDependencies": {
-    "microbundle": "^0.15.1"
+    "build": "cp src/index.css dist/index.css"
   }
 }
