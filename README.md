@@ -32,9 +32,9 @@ Add an import for the plugin in your CSS file. You cannot currently import only 
 
 - `scrollbar-gutter-auto`: Adds `scrollbar-gutter: auto;` to the element.
 
-- `scrollbar-gutter-stable`: Adds `scrollbar-gutter: stable;` to the element.
+- `scrollbar-stable`: Adds `scrollbar-gutter: stable;` to the element.
 
-- `scrollbar-gutter-stable` along with `scrollbar-gutter-both-edges`: Adds `scrollbar-gutter: stable both-edges;` to the element.
+- `scrollbar-stable` along with `scrollbar-both-edges`: Adds `scrollbar-gutter: stable both-edges;` to the element.
 
 ### [`scrollbar-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width)
 
